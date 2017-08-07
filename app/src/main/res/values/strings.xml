@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">辣鸡新闻</string>
+    <string name="tips_loading">数据加载中</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:id="@+id/fm_images_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fm_iamges_viewpager"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y580"
+            android:layout_centerInParent="true"
+            android:clipChildren="false"/>
+    </RelativeLayout>
+
+</FrameLayout>

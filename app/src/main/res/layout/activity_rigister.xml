@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/common_toolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="@dimen/x10"
+        android:text="用户名："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/rigist_username_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/rigist_username_edit"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/x400"
+        android:layout_height="wrap_content"/>
+</android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/x10"
+        android:text="密码："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rigist_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/rigist_password_edit"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x400"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/x10"
+        android:text="邮箱："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rigist_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/rigist_email_edit"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x400"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/rigister_rigist_btn"
+        android:background="#fd888b"
+        android:padding="@dimen/y5"
+        android:textSize="@dimen/y40"
+        android:layout_marginTop="@dimen/y40"
+        android:text="注册"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/x100"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

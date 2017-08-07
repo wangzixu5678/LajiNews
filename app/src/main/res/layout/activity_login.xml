@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginTop="@dimen/y250">
+
+        <TextView
+            android:id="@+id/log_txt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号:"
+            android:textSize="@dimen/x25"
+            />
+
+        <com.chaychan.viewlib.PowerfulEditText
+            android:paddingLeft="@dimen/x5"
+            android:singleLine="true"
+            android:id="@+id/log_edit_acount"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y40"
+            android:layout_toRightOf="@id/log_txt_count"
+            android:background="@null"
+            android:textSize="@dimen/y30"
+            android:gravity="start"
+            android:hint="请输入账号"
+            app:funcType="canClear"/>
+
+        <TextView
+            android:id="@+id/log_txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_txt_count"
+            android:layout_marginTop="@dimen/y45"
+            android:text="密码:"
+            android:textSize="@dimen/x25"/>
+        <com.chaychan.viewlib.PowerfulEditText
+            android:id="@+id/log_edit_password"
+            android:paddingLeft="@dimen/x5"
+            android:singleLine="true"
+            android:hint="请输入密码"
+            app:funcType="canWatchPwd"
+            android:gravity="start"
+            android:layout_alignBaseline="@id/log_txt_password"
+            android:layout_toRightOf="@id/log_txt_password"
+            android:background="@null"
+            android:layout_width="@dimen/x400"
+            android:textSize="@dimen/y30"
+            android:layout_height="@dimen/y40"/>
+
+        <TextView
+            android:background="@drawable/button_sel"
+            android:id="@+id/log_btn_login"
+            android:layout_marginTop="@dimen/y100"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_below="@id/log_txt_password"
+            android:textSize="@dimen/y35"
+            android:padding="@dimen/x10"
+            android:text="登陆"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"/>
+        <TextView
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_alignTop="@id/log_btn_login"
+            android:id="@+id/log_btn_rigister"
+            android:text="注册"
+            android:padding="@dimen/x10"
+            android:background="@drawable/button_sel"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/y35"
+            android:layout_toRightOf="@id/log_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
